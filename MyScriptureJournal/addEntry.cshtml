@@ -50,25 +50,21 @@
         <p>
             <label for="book">Book:</label>
             <input type="text" name="book" id="book" value="@Request.Form["book"]" />
-            @Html.ValidationMessage("book")
         </p>
 
         <p>
             <label for="chapter">Chapter:</label>
             <input type="text" name="chapter" id="chapter" value="@Request.Form["chapter"]" />
-            @Html.ValidationMessage("chapter")
         </p>
 
         <p>
             <label for="verse">Verse:</label>
             <input type="text" name="verse" id="verse" value="@Request.Form["verse"]" />
-            @Html.ValidationMessage("verse")
         </p>
 
         <p>
             <label for="note">Note:</label>
             <textarea rows="3" cols="28" id="note" name="note">@Request.Form["note"]</textarea>
-            @Html.ValidationMessage("note")
         </p>
 
         <p><input type="submit" name="buttonSubmit" value="Add Entry" /></p>
